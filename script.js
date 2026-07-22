@@ -60,30 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(updateCountdown, 1000);
   updateCountdown();
 
-  /* LIGHTBOX POPUP */
-  const galleryItems = document.querySelectorAll('.masonry-item');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxClose = document.querySelector('.lightbox-close');
-
-  galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const img = item.querySelector('img');
-      lightboxImg.src = img.src;
-      lightbox.classList.add('active');
-    });
-  });
-
-  lightboxClose.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-  });
-
-  lightbox.addEventListener('click', (e) => {
-    if (e.target !== lightboxImg) {
-      lightbox.classList.remove('active');
-    }
-  });
-
   /* BUTTON RIPPLE EFFECT */
   const rippleButtons = document.querySelectorAll('.ripple');
 
