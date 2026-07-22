@@ -17,7 +17,7 @@
       <nav class="nav-menu" id="nav-menu">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#memories" class="nav-link">Memories</a>
         <a href="#countdown" class="nav-link">Wishes & Countdown</a>
         <a href="#footer" class="nav-link">Contact</a>
       </nav>
@@ -36,27 +36,22 @@
 
       <!-- Background Decorations -->
       <div class="bg-decoration">
-        <!-- Watercolor -->
         <div class="watercolor"></div>
 
-        <!-- Blur Circles -->
         <div class="blur-circle circle1"></div>
         <div class="blur-circle circle2"></div>
         <div class="blur-circle circle3"></div>
 
-        <!-- Floating Hearts -->
         <span class="heart h1">❤</span>
         <span class="heart h2">❤</span>
         <span class="heart h3">❤</span>
         <span class="heart h4">❤</span>
         <span class="heart h5">❤</span>
 
-        <!-- Balloons -->
         <img src="images/red-balloon.png" class="balloon balloon1" alt="Red Balloon">
         <img src="images/blue-balloon.png" class="balloon balloon2" alt="Blue Balloon">
         <img src="images/white-balloon.png" class="balloon balloon3" alt="White Balloon">
 
-        <!-- Light Particles -->
         <div class="particles">
           <span></span>
           <span></span>
@@ -92,7 +87,7 @@
 
           <div class="hero-buttons">
             <a href="#countdown" class="btn btn-red ripple">❤️ Send Birthday Wish</a>
-            <a href="#gallery" class="btn btn-outline ripple">📷 See Memories</a>
+            <a href="#memories" class="btn btn-outline ripple">🎬 Watch Memories</a>
           </div>
         </div>
 
@@ -120,63 +115,51 @@
         <div class="about-card glassmorphism reveal-up">
           <div class="about-header">
             <span class="sub-heading">Special Dedication</span>
-            <h2>My Lovely Sis</h2>
+            2 My Lovely Sis</h2>
           </div>
           <p class="about-text">
             You are not just my sister, you are my best friend, my secret keeper, and my forever supporter. 
             Thank you for making every moment special, bringing endless laughter into our lives, and growing into such an incredible person.
           </p>
-          <a href="#gallery" class="btn btn-blue ripple">More About You</a>
+          <a href="#memories" class="btn btn-blue ripple">Watch Video Memories</a>
         </div>
       </div>
     </section>
 
-    <!-- PHOTO GALLERY SECTION -->
-    <section class="gallery-section" id="gallery">
+    <!-- VIDEO MEMORIES SECTION (Replaces Photo Gallery) -->
+    <section class="video-section" id="memories">
       <div class="container">
         <div class="section-title reveal-up">
-          <h2>Precious Memories</h2>
-          <p>A look back at some of the happiest moments we've shared together.</p>
+          <h2>Precious Video Memories 🎬</h2>
+          <p>Special moments caught on camera to cherish forever.</p>
         </div>
 
-        <div class="masonry-grid">
-          <div class="masonry-item reveal-up">
-            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="Memory 1">
-            <div class="overlay">
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-              <span>Celebrations</span>
+        <div class="video-grid">
+          <!-- Video 1 -->
+          <div class="video-card glassmorphism reveal-left">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="videos/memory1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>Unforgettable Moments ❤️</h3>
+              <p>Laughter, fun, and the sweetest memories we've shared.</p>
             </div>
           </div>
 
-          <div class="masonry-item reveal-up">
-            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=800" alt="Memory 2">
-            <div class="overlay">
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-              <span>Sweet Moments</span>
+          <!-- Video 2 -->
+          <div class="video-card glassmorphism reveal-right">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="videos/memory2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
-          </div>
-
-          <div class="masonry-item reveal-up">
-            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=800" alt="Memory 3">
-            <div class="overlay">
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-              <span>Unforgettable Days</span>
-            </div>
-          </div>
-
-          <div class="masonry-item reveal-up">
-            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=800" alt="Memory 4">
-            <div class="overlay">
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-              <span>16th Birthday Cake</span>
-            </div>
-          </div>
-
-          <div class="masonry-item reveal-up">
-            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=800" alt="Memory 5">
-            <div class="overlay">
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-              <span>Joy & Laughter</span>
+            <div class="video-info">
+              <h3>Birthday Celebration 🎉</h3>
+              <p>Highlights from special celebrations together.</p>
             </div>
           </div>
         </div>
@@ -212,12 +195,6 @@
       </div>
     </section>
   </main>
-
-  <!-- LIGHTBOX MODAL -->
-  <div class="lightbox" id="lightbox">
-    <span class="lightbox-close">&times;</span>
-    <img src="" alt="Enlarged Memory" id="lightbox-img">
-  </div>
 
   <!-- FOOTER -->
   <footer class="footer" id="footer">
