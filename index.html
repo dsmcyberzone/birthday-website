@@ -5,14 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy 16th Birthday, Lovely Sis! ❤️</title>
   <link rel="stylesheet" href="style.css">
-  <!-- FontAwesome for Social Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Background Particle Containers -->
-  <div class="particles-container" id="particles"></div>
-  <div class="balloons-container" id="balloons"></div>
 
   <!-- NAVIGATION BAR -->
   <header class="navbar" id="navbar">
@@ -36,11 +31,48 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="home">
+    <!-- HERO SECTION WITH DECORATIONS -->
+    <section class="hero hero-section" id="home">
+
+      <!-- Background Decorations -->
+      <div class="bg-decoration">
+        <!-- Watercolor -->
+        <div class="watercolor"></div>
+
+        <!-- Blur Circles -->
+        <div class="blur-circle circle1"></div>
+        <div class="blur-circle circle2"></div>
+        <div class="blur-circle circle3"></div>
+
+        <!-- Floating Hearts -->
+        <span class="heart h1">❤</span>
+        <span class="heart h2">❤</span>
+        <span class="heart h3">❤</span>
+        <span class="heart h4">❤</span>
+        <span class="heart h5">❤</span>
+
+        <!-- Balloons -->
+        <img src="images/red-balloon.png" class="balloon balloon1" alt="Red Balloon">
+        <img src="images/blue-balloon.png" class="balloon balloon2" alt="Blue Balloon">
+        <img src="images/white-balloon.png" class="balloon balloon3" alt="White Balloon">
+
+        <!-- Light Particles -->
+        <div class="particles">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Hero Main Content -->
       <div class="hero-container">
         
-        <!-- Left Column: Content Card -->
+        <!-- Left Column -->
         <div class="hero-content reveal-left">
           <div class="badge-sweet16">Sweet 16 ✨</div>
           <h1 class="hero-title">
@@ -53,7 +85,6 @@
             <i class="fa-solid fa-calendar-heart"></i> July 24, 2026
           </div>
 
-          <!-- Glassmorphism Birthday Card -->
           <div class="message-card glassmorphism">
             <h3>To My Lovely Sis,</h3>
             <p>Happy Birthday! Keep smiling, keep shining, and enjoy your special day to the fullest.</p>
@@ -65,7 +96,7 @@
           </div>
         </div>
 
-        <!-- Right Column: Image Collage -->
+        <!-- Right Column -->
         <div class="hero-media reveal-right">
           <div class="collage-container">
             <div class="collage-item main-img">
@@ -109,7 +140,6 @@
         </div>
 
         <div class="masonry-grid">
-          
           <div class="masonry-item reveal-up">
             <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="Memory 1">
             <div class="overlay">
@@ -149,7 +179,6 @@
               <span>Joy & Laughter</span>
             </div>
           </div>
-
         </div>
       </div>
     </section>
