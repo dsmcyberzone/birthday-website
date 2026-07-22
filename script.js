@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ==========================================================================
-     1. TYPING EFFECT
-     ========================================================================== */
+  /* TYPING EFFECT */
   const typingElement = document.getElementById('typing-text');
-  const textArray = ['LOVELY SIS', 'MY LOVELY SIS', 'SWEET 16!'];
+  const textArray = ['LOVELY SIS', 'MY BEST FRIEND', 'SWEET 16!'];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -23,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let typeSpeed = isDeleting ? 50 : 100;
 
     if (!isDeleting && charIndex === currentText.length) {
-      typeSpeed = 2000; // Pause at end
+      typeSpeed = 2000;
       isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
@@ -35,48 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   typeEffect();
 
-  /* ==========================================================================
-     2. PARTICLES & BALLOONS GENERATOR
-     ========================================================================== */
-  const particlesContainer = document.getElementById('particles');
-  const balloonsContainer = document.getElementById('balloons');
-
-  function createParticles() {
-    for (let i = 0; i < 30; i++) {
-      const particle = document.createElement('div');
-      particle.classList.add('particle');
-      
-      const size = Math.random() * 8 + 4;
-      particle.style.width = `${size}px`;
-      particle.style.height = `${size}px`;
-      particle.style.left = `${Math.random() * 100}vw`;
-      particle.style.animationDuration = `${Math.random() * 10 + 5}s`;
-      particle.style.animationDelay = `${Math.random() * 5}s`;
-
-      particlesContainer.appendChild(particle);
-    }
-  }
-
-  function createBalloons() {
-    const colors = ['#E53935', '#2196F3', '#FFCA28', '#AB47BC'];
-    for (let i = 0; i < 12; i++) {
-      const balloon = document.createElement('div');
-      balloon.classList.add('balloon');
-      balloon.style.left = `${Math.random() * 90 + 5}vw`;
-      balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-      balloon.style.animationDuration = `${Math.random() * 8 + 10}s`;
-      balloon.style.animationDelay = `${Math.random() * 8}s`;
-
-      balloonsContainer.appendChild(balloon);
-    }
-  }
-
-  createParticles();
-  createBalloons();
-
-  /* ==========================================================================
-     3. COUNTDOWN TIMER (TARGET: July 24, 2026)
-     ========================================================================== */
+  /* COUNTDOWN TIMER (July 24, 2026) */
   const targetDate = new Date('July 24, 2026 00:00:00').getTime();
 
   function updateCountdown() {
@@ -103,9 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(updateCountdown, 1000);
   updateCountdown();
 
-  /* ==========================================================================
-     4. LIGHTBOX POPUP
-     ========================================================================== */
+  /* LIGHTBOX POPUP */
   const galleryItems = document.querySelectorAll('.masonry-item');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
@@ -129,9 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* ==========================================================================
-     5. BUTTON RIPPLE EFFECT
-     ========================================================================== */
+  /* BUTTON RIPPLE EFFECT */
   const rippleButtons = document.querySelectorAll('.ripple');
 
   rippleButtons.forEach(button => {
@@ -151,21 +104,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ==========================================================================
-     6. SCROLL REVEAL ANIMATIONS & NAVBAR SCROLL
-     ========================================================================== */
+  /* SCROLL REVEAL & NAVBAR SCROLL */
   const navbar = document.getElementById('navbar');
   const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
 
   function handleScroll() {
-    // Sticky navbar effect
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
 
-    // Scroll reveal triggers
     const windowHeight = window.innerHeight;
     reveals.forEach(el => {
       const elementTop = el.getBoundingClientRect().top;
@@ -178,11 +127,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', handleScroll);
-  handleScroll(); // Trigger initial check
+  handleScroll();
 
-  /* ==========================================================================
-     7. MOBILE MENU TOGGLE
-     ========================================================================== */
+  /* MOBILE MENU TOGGLE */
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav-link');
