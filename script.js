@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
      1. TYPING EFFECT
      ========================================================================== */
   const typingElement = document.getElementById('typing-text');
-  const textArray = ['LOVELY SIS', 'MY BEST FRIEND', 'SWEET 16!'];
+  const textArray = ['LOVELY SIS', 'MY LOVELY SIS', 'SWEET 16!'];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
